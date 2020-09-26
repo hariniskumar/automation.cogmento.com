@@ -3,8 +3,8 @@ automation.cogmento.com
 
 Automation of cogmento.com
 
-Maven project
-Selenium java
+Maven project 
+Selenium java 
 Reusable Test framework
 TestNG
 Extent Reports
