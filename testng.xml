@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cogmento Test Suite ">
+	<parameter name="homePageUrl" value="https://cogmento.com"></parameter>
+	<listeners>
+		<listener class-name="util.ExtentReporter" />
+	</listeners>
+
+	<test thread-count="1" name="CogmentoHappyPathTestsFirefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.cogmento.testcases.CogmentoHappyPathTests" />
+		</classes>
+	</test>
+
+	<!-- <test thread-count="1" name="CogmentoHappyPathTestsChrome"> <parameter 
+		name="browser" value="chrome"></parameter> <classes> <class name="com.cogmento.testcases.CogmentoHappyPathTests" 
+		/> </classes> </test> -->
+
+</suite> 
+
