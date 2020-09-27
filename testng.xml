@@ -13,9 +13,12 @@
 		</classes>
 	</test>
 
-	<!-- <test thread-count="1" name="CogmentoHappyPathTestsChrome"> <parameter 
-		name="browser" value="chrome"></parameter> <classes> <class name="com.cogmento.testcases.CogmentoHappyPathTests" 
-		/> </classes> </test> -->
+	<test thread-count="1" name="CogmentoHappyPathTestsChrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.cogmento.testcases.CogmentoHappyPathTests" />
+		</classes>
+	</test>
 
 </suite> 
 
