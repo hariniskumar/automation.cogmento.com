@@ -143,7 +143,7 @@ public class CompanyAddOrEditPage extends UserPageTemplate {
 	// Actions
 	public void addCompany(Map<String, String> company) {
 		setName(company.get("Name"));
-		/*setWebsite(company.get("Website"));
+		setWebsite(company.get("Website"));
 		setStreetAddress(company.get("Address - Street Address"));
 		setCity(company.get("Address - City"));
 		setState(company.get("Address - State/County"));
@@ -168,8 +168,8 @@ public class CompanyAddOrEditPage extends UserPageTemplate {
 		setVatNumber(company.get("VAT Number"));
 		setIdentifier(company.get("Identifier"));
 		setImageFileUpload(company.get("exe file suffix for Image Upload"));
-		BrowserUtil.sleep(10000);// give some time for OS control to execute and upload image
-*/		saveElement.click();
+		BrowserUtil.sleep(5000);// give some time for OS control to execute and upload image
+		saveElement.click();
 	}
 
 	public void setName(String name) {
