@@ -6,12 +6,7 @@
 		<listener class-name="util.ExtentReporter" />
 	</listeners>
 
-	<test thread-count="1" name="CogmentoHappyPathTestsFirefox">
-		<parameter name="browser" value="firefox"></parameter>
-		<classes>
-			<class name="com.cogmento.testcases.CogmentoHappyPathTests" />
-		</classes>
-	</test>
+
 
 	<test thread-count="1" name="CogmentoHappyPathTestsChrome">
 		<parameter name="browser" value="chrome"></parameter>
@@ -20,5 +15,17 @@
 		</classes>
 	</test>
 
+<!-- 
+
+	<test thread-count="1" name="CogmentoHappyPathTestsFirefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.cogmento.testcases.CogmentoHappyPathTests" />
+		</classes>
+	</test>
+
+ -->
+ 
+ 
 </suite> 
 
