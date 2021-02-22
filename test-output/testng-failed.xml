@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Cogmento Test Suite ]" guice-stage="DEVELOPMENT">
+  <parameter name="homePageUrl" value="https://cogmento.com"/>
+  <listeners>
+    <listener class-name="util.ExtentReporter"/>
+  </listeners>
+  <test thread-count="5" name="CogmentoHappyPathTestsChrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.cogmento.testcases.CogmentoHappyPathTests">
+        <methods>
+          <include name="addCompanyTest" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.cogmento.testcases.CogmentoHappyPathTests -->
+    </classes>
+  </test> <!-- CogmentoHappyPathTestsChrome(failed) -->
+</suite> <!-- Failed suite [Cogmento Test Suite ] -->

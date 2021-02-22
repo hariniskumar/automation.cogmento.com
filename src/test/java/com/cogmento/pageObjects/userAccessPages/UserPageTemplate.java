@@ -19,6 +19,7 @@ import com.cogmento.pageObjects.GenericPage;
  *
  */
 public class UserPageTemplate extends GenericPage {
+	
 	/*
 	 * Left Vertical Menu Bar
 	 */

@@ -30,7 +30,7 @@ public class ExcelUtil {
 		Sheet sheet = getSheet(sheetName);
 		Object[][] data = new Object[sheet.getLastRowNum()][1];
 		for (int i = 1; i <= sheet.getLastRowNum(); i++) {
-			Map<String, String> datamap = new HashMap<>();
+			Map<String, String> datamap = new HashMap<String, String>();
 			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
 				Object headerCell = null;
 				Object cell = null;
@@ -53,6 +53,9 @@ public class ExcelUtil {
 	}
 
 	private static Sheet getSheet(String sheetName) {
+		String[] s1 = new String[2];
+		String[] s2 = new String[1];
+		String[] s3 = new String[0];
 		Sheet sheet;
 		InputStream is = null;
 		try {

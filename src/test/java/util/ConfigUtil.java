@@ -12,7 +12,7 @@ import java.util.Properties;
  *
  */
 public class ConfigUtil {
-	private static Properties configs = new Properties();;
+	private static Properties configs = new Properties();
 	/*
 	 * Loads the config file config.properties under <project_root>/config
 	 * 

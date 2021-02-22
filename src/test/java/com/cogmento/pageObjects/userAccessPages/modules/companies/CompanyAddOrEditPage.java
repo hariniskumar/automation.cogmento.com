@@ -155,8 +155,8 @@ public class CompanyAddOrEditPage extends UserPageTemplate {
 		setTags(company.get("Tags"));
 		setDescription(company.get("Description"));
 		setTwitterHandle(company.get("Social Channels - Twitter Handle"));
-		setFaceBookProfileLink(company.get("Social Channels - Facebook Profile Link"));
-		setLinkedInProfileLink(company.get("Social Channels - LinkedIn Profile Link"));
+		//setFaceBookProfileLink(company.get("Social Channels - Facebook Profile Link"));
+		//setLinkedInProfileLink(company.get("Social Channels - LinkedIn Profile Link"));
 		setIndustry(company.get("Industry"));
 		setNumberOfEmployees(company.get("Num. of Employees"));
 		setStockSymbol(company.get("Stock Symbol"));

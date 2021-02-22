@@ -67,6 +67,24 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
+			
+				<!-- bundles all jars into lib folder into the executable jar file -->
+				<plugin>
+				<groupId>de.ntcomputer</groupId>
+				<artifactId>executable-packer-maven-plugin</artifactId>
+				<version>1.0.1</version>
+				<configuration>
+					<mainClass>com.cogmento.CogmentoTests</mainClass>
+					<!-- <mainClass>org.testng.TestNG</mainClass> -->
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>pack-executable-jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 
 
 		</plugins>

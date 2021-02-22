@@ -14,6 +14,7 @@ import com.cogmento.pageObjects.GenericPage;
  *
  */
 public class LoginPage extends GenericPage {
+	
 	private WebElement usernameTxt;
 	private WebElement passwordTxt;
 	private WebElement submitBtn;
