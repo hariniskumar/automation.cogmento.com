@@ -4,7 +4,6 @@
 package com.cogmento.pageObjects;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 
 /**
  * @author Harini
@@ -15,10 +14,20 @@ public class GenericPage {
 
 	public GenericPage(WebDriver driver) {
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
+		// PageFactory.initElements(driver, this);
 	}
 
 	public WebDriver getDriver() {
 		return driver;
 	}
+
+	public String getTitle() {
+		return driver.getTitle();
+	}
+
+	public String getCurrentUrl() {
+		return driver.getCurrentUrl();
+
+	}
+
 }
