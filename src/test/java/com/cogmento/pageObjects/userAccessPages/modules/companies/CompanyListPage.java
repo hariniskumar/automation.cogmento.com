@@ -24,7 +24,7 @@ public class CompanyListPage extends UserPageTemplate {
 	}
 
 	public WebElement getNewCompanyBtn() {
-		newCompanyBtn = getDriver().findElement(By.xpath("//button[contains(text(),'New')]"));
+		newCompanyBtn = getDriver().findElement(By.xpath("//button[contains(text(),'Create')]"));
 		return newCompanyBtn;
 	}
 }
