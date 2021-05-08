@@ -44,9 +44,10 @@ public class CogmentoHappyPathTests {
 		driver = BrowserUtil.getWebDriver(browser);
 		driver.get(homePageUrl);
 		HomePage homePage = new HomePage(driver);
-		if(homePage.getCookieConfirmationBtn()!=null) {
-			homePage.getCookieConfirmationBtn().click();
-		}
+		//uncomment below later after page factory initialization is removed
+//		if(homePage.getCookieConfirmationBtn()!=null) {
+//			homePage.getCookieConfirmationBtn().click();
+//		}
 		homePage.getLoginBtn().click();
 
 		LoginPage loginPage = new LoginPage(driver);
